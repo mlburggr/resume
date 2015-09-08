@@ -1,0 +1,102 @@
+% LaTeX file for resume 
+% This file uses the resume document class (res.cls)
+
+\documentclass[margin]{res} 
+% the margin option causes section titles to appear to the left of body text 
+\textwidth=5.2in % increase textwidth to get smaller right margin
+\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+\begin{document} 
+ 
+\name{Maxwell L. Burggraf\\[12pt]} % the \\[12pt] adds a blank line after name
+ 
+\address{ \\ 201 Harvard Place \\ Syracuse, NY 13210  \\
+        (336)-540-4956 }
+\address{ \\ mlburggr@syr.edu \\ github.com/mlburggr }
+
+ 
+\begin{resume} 
+ 
+
+\section{Education} 
+ Syracuse University, Syracuse, NY  \\        
+    Bachelor of Science, Computer Science, expected May 2017 \\
+     \begin{ncolumn}{2}
+                Coursework:   \\
+                Functional Programming          &  Data Structures \\
+                Systems Programming &  Logic \\
+                Security, Access Control, and Trust       &  Certified Security by Design  \\
+                Discrete Mathematics             & Reporting \& Presentation
+		\end{ncolumn}
+
+    
+ 
+
+\section{Experience}
+ {\bf Undergraduate Research Assistant,} Syracuse University \hfill Summer  2015
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Assisted graduate students in developing DroidSIFT, a new, sematics-aware approach to detecting malware in Android applications
+ \item Created node.js web application and REST API back-end to allow users to upload APK files and view malware analysis results
+ \end{itemize}
+
+ {\bf IT Consultant,} Tech Geekery, Syracuse, NY \hfill  Feb 2015 - Present
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item On-site IT support
+\end{itemize}
+ 
+{\bf IT Manager,} The Daily Orange, Syracuse, NY \hfill  Aug 2014 - Present
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Manage and maintain office environment, including Windows and GNU/Linux servers, Windows and Mac workstations, office equipment, etc.
+\item Maintain server backups and inventory records of IT equipment and software
+\item Member of Board of Directors
+\item Co-manage website design and development
+\end{itemize}
+
+{\bf Teaching Assistant,} Syracuse University \hfill  Aug 2014 - Present
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Designed and graded several quizzes and homework assignments for a class of 46 Computer Science first-year students
+\item Held office hours to assist students in understanding course material
+\item Covered various basic Computer Science concepts in Snap! and C
+\end{itemize}
+
+{\bf Co-Founder,} CourseGoat.com, Syracuse, NY \hfill
+Aug 2014 - Present            
+                \begin{itemize} \itemsep -2pt
+                 \item  Co-developed schedule-creating site for Syracuse University
+                
+                 \item Wrote node.js JavaScript to interact with the Mongo database, client-side JavaScript UI/UX code, and web-scraping spiders in Python
+                 
+                 \item Managed webserver
+                 
+                 \item Awarded \$1000 in funding at the IDEA Startup Competition
+                 
+
+		 \end{itemize}
+
+
+
+
+ 
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Skills}
+   \begin{tabular}{l p{3in}}
+    \underline{Languages:} & Java, C/C++, Haskell, JavaScript, Swift, \LaTeX , MySQL, XML, HTML \\
+     \underline{Software:} & Android Studio, XCode, Eclipse, Visual Studio, Emacs, Vim, Git  \\
+     \underline{Environments:} & GNU/Linux, Windows, Mac OS X
+     
+ \end{tabular}
+ 
+\section{Awards \& Certifications}
+\begin{itemize}
+\item CompTIA A+ Certification
+\item IBM Master the Mainframe Competition - Participated in an IBM hosted competition. Completed Part 2 two years in a row.
+\end{itemize}
+
+
+\end{resume} 
+\end{document} 
+
+
+
