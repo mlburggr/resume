@@ -1,0 +1,182 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Maxwell Burggraf}{}{}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:mlburggr@gmail.com}{mlburggr\mbox{}@\mbox{}gmail.com}\sbull
+(336)-540-4956\sbull
+\href{https://github.com/mlburggr}{github.com/mlburggr}
+\\
+201 Harvard Place\sbull
+Syracuse, NY\sbull
+13210
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Education}
+
+\headedsection
+  {Syracuse University}
+  {\textsc{Syracuse, NY}} {%
+  \headedsubsection
+    {Bachelor of Science, Computer Science \sbull GPA: 3.365}
+    {Expected May 2017}
+
+}
+
+
+\spacedhrule{0em}{0em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {Amazon.com}
+  {\textsc{Seattle, WA}} {%
+  \headedsubsection
+    {Software Engineer Intern}
+    {May 2016 -- present}
+    {\bodytext{
+	\begin{itemize}
+	\item Working with the AWS User Experience team
+	\item Assisting with the development of a new AWS service
+	\end{itemize}
+}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {Syracuse University}
+  {\textsc{Syracuse, NY}} {%
+  \headedsubsection
+    {Undergraduate Research Assistant}
+    {Summer 2015}
+    {\bodytext{
+\begin{itemize}
+	\item Assisted graduate students in developing DroidSIFT, a new, sematics-aware approach to detecting malware in Android applications
+	\item Created a node.js web application called Gryphon and a REST API back-end to allow users to upload APK files and view malware analysis results
+	\end{itemize}
+}}
+    \headedsubsection
+    {Teaching Assistant, \it{Introduction to Systems Programming}}
+    {January 2016 -- May 2016}
+{\bodytext{
+\begin{itemize}
+	\item Guided a class of 60 second-year Computer Science students during in-class activities
+	\item Held office hours to guide students through assignments and assist students in understanding course materials
+	\item Covered various Systems Programming concepts in Bash and C
+	\end{itemize}
+}}
+
+\headedsubsection
+{Teaching Assistant, \it{Introduction to Engineering and Computer Science}}
+{August 2014 -- January 2015}
+{\bodytext{
+\begin{itemize}
+	\item Designed and graded several quizzes and homework assignments for a class of 46 Computer Science first-year students
+	\item Held office hours to assist students in understanding course materials
+	\item Covered various basic Computer Science concepts in Snap! and C
+	\end{itemize}
+}}
+
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {The Daily Orange}
+  {\textsc{Syracuse, NY}} {%
+  \headedsubsection
+    {IT Manager}
+    {August 2014 -- present}
+    {\bodytext{
+	\begin{itemize}
+	\item Member of Board of Directors
+	\item Co-manage website design and development
+	\item Manage and maintain office environment, including Windows and GNU/Linux servers, Windows and Mac workstations, office equipment, etc.
+	\item Maintain server backups and inventory records of IT equipment and software
+	\end{itemize}
+}}
+}
+
+\spacedhrule{-0.1em}{-0.4em}
+
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Languages:}
+  {Java, C/C++, Haskell, Python, JavaScript, Swift, MySQL, XML, HTML, \LaTeX}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Software:}
+  {Android Studio, XCode, Eclipse, Visual Studio, Emacs, Vim, Git}
+
+\vspace{0.5em}
+\inlineheadsection
+  {Environments:}
+  {GNU/Linux, Windows, Mac OS X}
+
+
+
+
+\spacedhrule{1.2em}{-0.4em}
+
+\roottitle{Certifications \& Achievements}
+\begin{itemize}
+\item \textbf{CompTIA A+ Certification}
+\item \textbf{Syracuse University Dean's List }-- Fall 2016, Spring 2016
+\end{itemize}
+
+
+\spacedhrule{-0.6em}{-0.4em}
+
+\roottitle{Notable Projects}
+\begin{itemize}
+\item \textbf{CourseGoat.com} -- Schedule-creating website for Syracuse University.
+\item \textbf{Tweeter} -- Game based on Conway's Game of Life that focuses on the population and evolution of songbirds.
+\item \textbf{Indian Diagnostics} -- Android and iOS application that allows users to easily view details of an Indian Motorcycle error code
+\item \textbf{OverRustle for iOS} -- iOS application for OverRustle.com, a stream-viewing site with a built-in chatroom
+\item \textbf{Orange Rocket Ballistics Team (ORBiT) - Electronics Development} -- Configured and programmed a BeagleBone Black board to control actuators and ignition.
+
+
+\end{itemize}
+
+Full source code for projects available at \href{https://github.com/mlburggr}{github.com/mlburggr}.
+\end{document}
+
+＀
