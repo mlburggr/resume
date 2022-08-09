@@ -24,11 +24,11 @@
 \usepackage{resume}
 
 
-
-
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
 
+
+\let\olditemize=\itemize \let\endolditemize=\enditemize \renewenvironment{itemize}{\olditemize \itemsep0.1em}{\endolditemize}
 
 % title on top of the document
 \maintitle{Maxwell Burggraf}{}{}
@@ -44,9 +44,7 @@
 (336)-540-4956\sbull
 \href{https://github.com/mlburggr}{github.com/mlburggr}
 \\
-201 Harvard Place\sbull
-Syracuse, NY\sbull
-13210
+Seattle, WA
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
@@ -56,26 +54,49 @@ Syracuse, NY\sbull
   {Syracuse University}
   {\textsc{Syracuse, NY}} {%
   \headedsubsection
-    {Bachelor of Science, Computer Science \sbull GPA: 3.365}
-    {Expected May 2017}
-
+    {Bachelor of Science, Computer Science}
+    {May 2017}
+{\bodytext{
+	\begin{itemize}
+	\item Syracuse University Dean's List -- Fall 2016, Spring 2016
+	\end{itemize}
+}}
 }
 
-
-\spacedhrule{0em}{0em}
+\spacedhrule{0.9em}{-0.4em}
 
 \roottitle{Experience}
 
 \headedsection  % sets the header for the section and includes any subsections
-  {Amazon.com}
+  {Amazon Web Services}
   {\textsc{Seattle, WA}} {%
-  \headedsubsection
-    {Software Engineer Intern}
-    {May 2016 -- present}
+ \headedsubsection
+    {Software Development Engineer II}
+    {April 2020 -- present}
     {\bodytext{
 	\begin{itemize}
-	\item Working with the AWS User Experience team
-	\item Assisting with the development of a new AWS service
+	\item Owned and led several features to completion, such as private repository support for Lightsail Containers and a major Windows instance security improvement
+	\item Developed and maintained microservices that meter usage and ensure accurate billing for Lightsail customers
+	\item Worked with a small sub-team to develop Lightsail's Containers feature, a simplified container hosting offering
+          \item Designed and built major portions of an unannounced AWS service
+	\end{itemize}
+}}
+  \headedsubsection
+    {Software Development Engineer I}
+    {August 2017 -- April 2020}
+    {\bodytext{
+	\begin{itemize}
+	\item Assisted with several customer-facing Amazon Lightsail features, such as Disks, Databases, Load Balancers, and Windows Instances
+	\item Led several projects to completion that benefited customers and developers
+	\end{itemize}
+}}
+  \headedsubsection
+    {Software Development Engineer Intern}
+    {May 2016 -- August 2016}
+    {\bodytext{
+	\begin{itemize}
+	\item Assisted with the development of Amazon Lightsail, a new AWS service
+	\item Delivered a project that assisted with backend development of the service
 	\end{itemize}
 }}
 }
@@ -85,32 +106,22 @@ Syracuse, NY\sbull
   {\textsc{Syracuse, NY}} {%
   \headedsubsection
     {Undergraduate Research Assistant}
-    {Summer 2015}
+    {May 2015 - August 2015}
     {\bodytext{
 \begin{itemize}
-	\item Assisted graduate students in developing DroidSIFT, a new, sematics-aware approach to detecting malware in Android applications
+	\item Assisted graduate students in developing DroidSIFT, a new, semantics-aware approach to detecting malware in Android applications
 	\item Created a node.js web application called Gryphon and a REST API back-end to allow users to upload APK files and view malware analysis results
 	\end{itemize}
 }}
     \headedsubsection
-    {Teaching Assistant, \it{Introduction to Systems Programming}}
-    {January 2016 -- May 2016}
+    {Teaching Assistant, \it{Intro to Computer Science, Intro to Systems Programming}}
+    {August 2014 -- May 2016}
 {\bodytext{
 \begin{itemize}
-	\item Guided a class of 60 second-year Computer Science students during in-class activities
+	\item Guided classes of up to 60 first and second-year Computer Science students during in-class activities
 	\item Held office hours to guide students through assignments and assist students in understanding course materials
+          \item Designed and graded several quizzes and homework assignments
 	\item Covered various Systems Programming concepts in Bash and C
-	\end{itemize}
-}}
-
-\headedsubsection
-{Teaching Assistant, \it{Introduction to Engineering and Computer Science}}
-{August 2014 -- January 2015}
-{\bodytext{
-\begin{itemize}
-	\item Designed and graded several quizzes and homework assignments for a class of 46 Computer Science first-year students
-	\item Held office hours to assist students in understanding course materials
-	\item Covered various basic Computer Science concepts in Snap! and C
 	\end{itemize}
 }}
 
@@ -121,62 +132,38 @@ Syracuse, NY\sbull
   {\textsc{Syracuse, NY}} {%
   \headedsubsection
     {IT Manager}
-    {August 2014 -- present}
+    {August 2014 -- May 2017}
     {\bodytext{
 	\begin{itemize}
 	\item Member of Board of Directors
-	\item Co-manage website design and development
-	\item Manage and maintain office environment, including Windows and GNU/Linux servers, Windows and Mac workstations, office equipment, etc.
-	\item Maintain server backups and inventory records of IT equipment and software
+	\item Co-managed website design and development
+	\item Managed and maintained office environment, including Windows and GNU/Linux servers, Windows and Mac workstations, office equipment, etc.
+	\item Maintained server backups and inventory records of IT equipment and software
 	\end{itemize}
 }}
 }
 
-\spacedhrule{-0.1em}{-0.4em}
+\spacedhrule{0.9em}{-0.4em}
 
 
 \roottitle{Skills}
-
-\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
-  {Languages:}
-  {Java, C/C++, Haskell, Python, JavaScript, Swift, MySQL, XML, HTML, \LaTeX}
-
-\vspace{0.5em}
-\inlineheadsection
-  {Software:}
-  {Android Studio, XCode, Eclipse, Visual Studio, Emacs, Vim, Git}
-
-\vspace{0.5em}
-\inlineheadsection
-  {Environments:}
-  {GNU/Linux, Windows, Mac OS X}
-
-
-
-
-\spacedhrule{1.2em}{-0.4em}
-
-\roottitle{Certifications \& Achievements}
 \begin{itemize}
-\item \textbf{CompTIA A+ Certification}
-\item \textbf{Syracuse University Dean's List }-- Fall 2016, Spring 2016
+\item 
+  \textbf{Languages:}
+  {Go, Java, Kotlin, C/C++, Python, JavaScript, Swift, SQL, \LaTeX}
+
+
+\item
+  \textbf{Skills:}
+  {Automated software testing, Continuous Integration pipelines, Git, Containers, Agile development  }
+
+
+\item Rich experience in many AWS services including: DynamoDB, SQS, SNS, ECS, Lambda, CloudFormation
+
+\item Excellent written and verbal English communication skills
 \end{itemize}
 
 
-\spacedhrule{-0.6em}{-0.4em}
-
-\roottitle{Notable Projects}
-\begin{itemize}
-\item \textbf{CourseGoat.com} -- Schedule-creating website for Syracuse University.
-\item \textbf{Tweeter} -- Game based on Conway's Game of Life that focuses on the population and evolution of songbirds.
-\item \textbf{Indian Diagnostics} -- Android and iOS application that allows users to easily view details of an Indian Motorcycle error code
-\item \textbf{OverRustle for iOS} -- iOS application for OverRustle.com, a stream-viewing site with a built-in chatroom
-\item \textbf{Orange Rocket Ballistics Team (ORBiT) - Electronics Development} -- Configured and programmed a BeagleBone Black board to control actuators and ignition.
-
-
-\end{itemize}
-
-Full source code for projects available at \href{https://github.com/mlburggr}{github.com/mlburggr}.
 \end{document}
 
 ＀
