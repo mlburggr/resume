@@ -14,7 +14,7 @@
 \documentclass[10pt,a4paper]{article}
 
 % Set the page margins.
-\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage[a4paper,margin=0.65in]{geometry}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -51,16 +51,30 @@ Seattle, WA
 \roottitle{Experience}
 
 \headedsection  % sets the header for the section and includes any subsections
+  {Amazon Kuiper}
+  {\textsc{Redmond,  WA}} {%
+ \headedsubsection
+    {Software Development Engineer II}
+    {Nov 2022 -- present}
+    {\bodytext{
+	\begin{itemize}
+	\item Designed and implemented major portions of Kuiper's cloud-based hardware-in-the-loop test execution and host management system.  The system led to massive improvements in test venue utilization and allowed automated testing in CI-CD pipelines across Kuiper
+	\item Assisted dozens of teams across Kuiper create CI-CD pipelines that fully automate the build, test, and release process for embedded satellite and ground software
+	\end{itemize}
+}}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
   {Amazon Web Services}
   {\textsc{Seattle, WA}} {%
  \headedsubsection
     {Software Development Engineer II}
-    {April 2020 -- present}
+    {April 2020 -- Nov 2022}
     {\bodytext{
 	\begin{itemize}
 	\item Led several features to completion, such as private repository support for Lightsail Containers and a major Windows instance security improvement
 	\item Developed and maintained microservices that meter usage and ensure accurate billing for Lightsail customers. These systems were designed to continuously scale and operate on hundreds of thousands of lines of data per day
-	\item Worked with a sub-team to develop Lightsail's Containers feature, a simplified container hosting offering
+	\item Co-developed Lightsail's Containers feature, a simplified container hosting offering
            \item Made several internal operational improvements to minimize the team's operational burden, which led to increased productivity on new products and features
            \item Mentored and trained several new developers who quickly became productive members of the development team
            \item Designed and built major portions of an unannounced AWS service using Kotlin and a serverless state machine architecture
@@ -94,8 +108,8 @@ Seattle, WA
     {May 2015 - August 2015}
     {\bodytext{
 \begin{itemize}
-	\item Assisted graduate students in developing DroidSIFT, a new, semantics-aware approach to detecting malware in Android applications
-	\item Created a node.js web application called Gryphon and a REST API back-end to allow users to upload APK files and view malware analysis results
+	%\item Assisted graduate students in developing DroidSIFT, a new, semantics-aware approach to detecting malware in Android applications
+	\item Assisted graduate students in developing a new, semantics-aware Android malware detection tool
 	\end{itemize}
 }}
     \headedsubsection
@@ -104,7 +118,6 @@ Seattle, WA
 {\bodytext{
 \begin{itemize}
 	\item Guided classes of up to 60 first and second-year Computer Science students during in-class activities
-	\item Covered various Systems Programming concepts in Bash and C
 	\end{itemize}
 }}
 
@@ -134,27 +147,28 @@ Seattle, WA
   \headedsubsection
     {Bachelor of Science, Computer Science}
     {May 2017}
-{\bodytext{
-	\begin{itemize}
-	\item Syracuse University Dean's List
-	\end{itemize}
-}}
+{
+%\bodytext{
+%	\begin{itemize}
+%	\item  Syracuse University Dean's List
+%	\end{itemize}
+%}
+}
 }
 
 \spacedhrule{0.9em}{-0.4em}
 
-
 \roottitle{Skills}
+
 \begin{itemize}
 \item 
   \textbf{Languages:}
-  {Go, Java, Kotlin, JavaScript, C/C++, Python, Ruby, Swift, SQL, \LaTeX}
+  {Go, Java, Kotlin, JavaScript, C/C++, C\#, Python, Ruby, Swift, SQL, \LaTeX}
 
 \item
-  \textbf{Infrastructure:}
-  {Automated software testing, Continuous Integration pipelines, Git, Containers, Docker,  rich experience in many AWS services including: DynamoDB, SQS, SNS, ECS, Lambda, CloudFormation }
-
-\item 4+ years of 24/7 operational support on-call experience to maintain a high bar for software quality
+  \textbf{Technologies:}
+  {Automated software testing, Continuous Integration pipelines, Infrastructure as Code (AWS CDK, Terraform), Git, Containers, Docker, Agile and Scrum methodologies, rich experience in many AWS services including: DynamoDB, SQS, SNS, EC2, ECS, Lambda, CloudFormation }
+\item 6+ years of 24/7 operational support on-call experience to maintain a high bar for software quality
 \item Excellent written and verbal English communication skills
 \end{itemize}
 
